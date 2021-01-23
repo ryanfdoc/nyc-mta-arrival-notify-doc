@@ -60,20 +60,18 @@ time_until_train = int(((nearest_arrival_time - current_time) / 60))
 # This final part of the code checks the time to arrival and prints a few
 # different messages depending on the circumstance
 if time_until_train > 3:
-    print(f"""
+    print(f"
 It's currently {time.strftime("%I:%M %p")}
 The next Brooklyn-bound B/D train from
 Broadway-Lafayette Station arrives in
-{time_until_train} minutes at {time.strftime("%I:%M %p", time.localtime(nearest_arrival_time))}""")
+{time_until_train} minutes at {time.strftime("%I:%M %p", time.localtime(nearest_arrival_time))}")
 elif time_until_train <= 0:
-    print(f"""
-Welp... You *just* missed the train. (╯°□°）╯︵ ┻━┻
-Ah well, the next train will arrive at {time.strftime("%I:%M %p", time.localtime(second_arrival_time))}""")
+    print(f"the next train will arrive at {time.strftime("%I:%M %p", time.localtime(second_arrival_time))}")
 else:
-    print(f"""
+    print(f"
 HURRY UP YOU HAVE {time_until_train} MINUTES TO GET TO
 BROADWAY-LAFAYETTE IF YOU WANT TO GET HOME!
-THE TRAIN GETS IN AT {time.strftime("%I:%M %p", time.localtime(nearest_arrival_time))}""")
+THE TRAIN GETS IN AT {time.strftime("%I:%M %p", time.localtime(nearest_arrival_time))}")
 
 
 # These are useful print statements used for script debugging, commented out
