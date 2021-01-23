@@ -58,7 +58,7 @@ current_time = int(time.time())
 time_until_train = int(((nearest_arrival_time - current_time) / 60))
 
 # for times in collected_times:
-    print(times, "=", time.strftime("%I:%M %p", time.localtime(times)))
+print(times, "=", time.strftime("%I:%M %p", time.localtime(times)))
 
 # This final part of the code checks the time to arrival and prints a few
 # different messages depending on the circumstance
