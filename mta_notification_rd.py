@@ -7,7 +7,7 @@ load_dotenv(find_dotenv()) # loads .env from root directory
 
 # The root directory requires a .env file with API_KEY assigned/defined within
 # and dotenv installed from pypi. Get API key from http://datamine.mta.info/user
-api_key = ""
+api_key = "pRNmvpGMmR9lFcp82OIty307RJzAUkFn4seMMYHe"
 
 # Requests subway status data feed from City of New York MTA API
 feed = gtfs_realtime_pb2.FeedMessage()
